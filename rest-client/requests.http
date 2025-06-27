@@ -8,5 +8,12 @@ Accept: application/json
 
 {
   "email": "user@email.com",
-  "password": "1234"
+  "password": "123456"
 }
+
+### Read One user
+# @name readOneUser
+GET {{baseUrl}}/user/1
+
+
+
