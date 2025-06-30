@@ -30,3 +30,15 @@ Accept: application/json
   "password": "123456"
 }
 
+### Update user
+# @name createUser
+PATCH  {{baseUrl}}/user/me
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{jwtToken}}
+
+{
+  "name": "Leleo",
+  "email": "user@email.com"
+}
+
