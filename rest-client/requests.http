@@ -9,7 +9,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "email": "user@email.com",
+  "email": "leo@email.com",
   "password": "123456"
 }
 
@@ -25,8 +25,8 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Leonardo",
-  "email": "user@email.com",
+  "name": "João",
+  "email": "joao@email.com",
   "password": "123456"
 }
 
@@ -38,7 +38,7 @@ Accept: application/json
 Authorization: Bearer {{jwtToken}}
 
 {
-  "name": "Leleo",
-  "email": "user@email.com"
+  "name": "Leonardo",
+  "email": "leo@email.com"
 }
 
