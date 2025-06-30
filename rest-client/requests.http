@@ -10,7 +10,7 @@ Accept: application/json
 
 {
   "email": "leo@email.com",
-  "password": "123456"
+  "password": "leo123"
 }
 
 ### Read One user
@@ -42,3 +42,14 @@ Authorization: Bearer {{jwtToken}}
   "email": "leo@email.com"
 }
 
+### Update user password
+# @name updateUserPassword
+PATCH  {{baseUrl}}/user/me/password
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{jwtToken}}
+
+{
+  "currentPassword": "leo123",
+  "newPassword": "leo123"
+}
