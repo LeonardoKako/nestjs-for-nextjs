@@ -25,14 +25,14 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "João",
-  "email": "joao@email.com",
-  "password": "123456"
+  "name": "Leonardo",
+  "email": "leo@email.com",
+  "password": "leo123"
 }
 
 ### Update user
 # @name createUser
-PATCH  {{baseUrl}}/user/me
+PATCH {{baseUrl}}/user/me
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{jwtToken}}
@@ -44,7 +44,7 @@ Authorization: Bearer {{jwtToken}}
 
 ### Update user password
 # @name updateUserPassword
-PATCH  {{baseUrl}}/user/me/password
+PATCH {{baseUrl}}/user/me/password
 Content-Type: application/json
 Accept: application/json
 Authorization: Bearer {{jwtToken}}
@@ -53,3 +53,13 @@ Authorization: Bearer {{jwtToken}}
   "currentPassword": "leo123",
   "newPassword": "leo123"
 }
+
+### Read one user
+# @name readOneUser
+GET {{baseUrl}}/user/me
+Authorization: Bearer {{jwtToken}}
+
+### Delete one user
+# @name deleteOneUser
+DELETE {{baseUrl}}/user/me
+Authorization: Bearer {{jwtToken}}
