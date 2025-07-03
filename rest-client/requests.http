@@ -77,7 +77,7 @@ Content-Type: application/json
 Authorization: Bearer {{jwtToken}}
 
 {
-  "title": "Título do post",
+  "title": "Título do post Publico",
   "excerpt": "Excerto do post",
   "content": "Conteúdo",
   "coverImageUrl": "http://localhost"
